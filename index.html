@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mfw when opacity</title>
+    <style>
+        p {
+            font-size: 55px;
+            text-align: center;
+            opacity: 0;
+            font-family:'Ballet', sans-serif;
+            transition: opacity 3s ease-in-out;
+        }
+        body {
+            background-color: #ffffcc
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p id="rhythm" style="opacity: 10%;" onclick="gentOpacity()">I hit 'em with a little bit of rhythm and a synonym</p>
+    <p id="gent" onclick="spiceOpacity()">perfect gentleman,</p>
+    <p id="spice" onclick="jjOpacity()">spice like cinnamon,</p>
+    <p id="jj" onclick="humanOpacity()">JJ Cumin,</p>
+    <p id="human" onclick="thenOpacity()">human,</p>
+    <p id="then" onclick="dogOpacity()">then again,</p>
+    <p id="dog" onclick="finalOpacity()" style="font-size: 85px;">I'm a dog like Rin Tin Tin and 'em</p>
+    <script>
+        function gentOpacity() {
+            document.getElementById("rhythm").style.opacity = "100%";
+            document.getElementById("gent").style.opacity = "10%";
+        }
+        function spiceOpacity() {
+            document.getElementById("gent").style.opacity = "100%";
+            document.getElementById("spice").style.opacity = "10%";
+        }
+        function jjOpacity() {
+            document.getElementById("spice").style.opacity = "100%";
+            document.getElementById("jj").style.opacity = "10%";
+        }
+        function humanOpacity() {
+            document.getElementById("jj").style.opacity = "100%";
+            document.getElementById("human").style.opacity = "10%";
+        }
+        function thenOpacity() {
+            document.getElementById("human").style.opacity = "100%";
+            document.getElementById("then").style.opacity = "10%";
+        }
+        function dogOpacity() {
+            document.getElementById("then").style.opacity = "100%";
+            document.getElementById("dog").style.opacity = "10%";
+        }
+        function finalOpacity() {
+            document.getElementById("dog").style.opacity = "100%";
+        }
+    </script>
+</body>
+</html>
